@@ -1,0 +1,12 @@
+#editor code
+.idea
+.vscode
+```
+
+#virtual env
+.venv
+
+
+#pycache
+__pycache__/
+*/__pycache__/
