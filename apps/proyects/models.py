@@ -14,6 +14,11 @@ class Proyect(models.Model):
     description = models.CharField(max_length=200)
     category_proyects = models.CharField(max_length=2, choices=CATEGORY_PROYECTS, default="LI")
 
+    class Meta:
+        ordering = ['name_proyect']
+        verbose_name = 'Proyect'
+        verbose_name_plural = 'Proyects'
+
 
 class Task(models.Model):
     STATUS_TASK = [
@@ -27,6 +32,11 @@ class Task(models.Model):
     proyect = models.ForeignKey(Proyect, on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
     status_task = models.CharField(max_length=2, choices=STATUS_TASK, default="PE")
+
+    class Meta:
+        ordering = ['date']
+        verbose_name = 'Task'
+        verbose_name_plural = 'Tasks'
 
 # python manage.py make migrations => generate code for change in Db  (create table)
 # python manage.py migrate
