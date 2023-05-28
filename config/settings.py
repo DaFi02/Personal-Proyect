@@ -44,7 +44,7 @@ THIRD_PARTY_APPS = [
 ]
 
 OTHER_APPS = [
-
+    'apps.proyects',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + OTHER_APPS
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ovdeon',
+        'NAME': 'tasktemplifydb',
         'USER': 'proyect',
         'PASSWORD': '123456',
         'HOST': '127.0.0.1',
