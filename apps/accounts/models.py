@@ -11,6 +11,7 @@ class Account(models.Model):
         ordering = ['name']
         verbose_name = 'Account'
         verbose_name_plural = 'Accounts'
+        
 
     def __str__(self):
         return self.user_name

@@ -11,6 +11,7 @@ class Proyect(models.Model):
         ("ST", "Study"),
         ("LI", "Life"),
     ]
+    #TODO: add field for image
     name_proyect = models.CharField("name for the proyect", max_length=50)
     description = models.CharField(max_length=200)
     category_proyects = models.CharField(max_length=2, choices=CATEGORY_PROYECTS, default="LI")
