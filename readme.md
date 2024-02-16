@@ -7,6 +7,7 @@ A platform for creating projects  and sharing task.
 - Python 3.11.1
 - Django 4.2.1
 - Django Rest Framework 3.14
+- probando
 
 In the next link you will find:
 - ERD
